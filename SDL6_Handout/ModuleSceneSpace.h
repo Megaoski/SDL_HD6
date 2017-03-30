@@ -21,6 +21,7 @@ public:
 	SDL_Texture* background = nullptr;
 	SDL_Texture* stars = nullptr;
 	Mix_Music* musiquita;
+	Mix_Chunk* lasersito;
 };
 
 #endif // __MODULESCENESPACE_H__

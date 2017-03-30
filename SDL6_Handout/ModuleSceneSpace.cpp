@@ -5,6 +5,7 @@
 #include "ModulePlayer.h"
 #include "ModuleSceneSpace.h"
 #include "ModuleFadeToBlack.h"
+#include "ModuleInput.h"
 
 // Reference at https://www.youtube.com/watch?v=OEhmUuehGOA
 
@@ -21,9 +22,12 @@ bool ModuleSceneSpace::Start()
 	
 	background = App->textures->Load("rtype/background.png");
 	musiquita = App->audio->LoadMusic("rtype/starting.wav");
+	lasersito = App->audio->LoadSFX("rtype/laser.wav");
 
 	App->scene_space->Enable();
 	App->player->Enable();
+
+
 	App->audio->PlayMusic(musiquita);
 	
 	
@@ -55,7 +59,10 @@ update_status ModuleSceneSpace::Update()
 	// Draw everything --------------------------------------
 	App->render->Blit(background, 0, 0, NULL);
 
-
+	if (App->input->keyboard[SDL_SCANCODE_SPACE] == KEY_DOWN)
+	{
+		App->audio->PlaySFX(lasersito);
+	}
 	
 	
 	return UPDATE_CONTINUE;
