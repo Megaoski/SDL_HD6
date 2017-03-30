@@ -34,9 +34,11 @@ bool ModuleParticles::Start()
 
 	// TODO 2: Create the template for a new particle "laser"
 	
-	laser.anim.PushBack({ 102, 169,82, 16 });
+	laser.anim.PushBack({ 102, 169, 82, 16});
+	laser.anim.PushBack({ 184, 169, 82, 16 });
 	laser.anim.loop = false;
-	laser.anim.speed = 0.5f;
+	laser.anim.speed = 0.3f;
+	
 	return true;
 }
 
@@ -93,8 +95,7 @@ void ModuleParticles::AddParticle(const Particle& particle, int x, int y, Uint32
 	p->born = SDL_GetTicks() + delay;
 	p->position.x = x;
 	p->position.y = y;
-
-	active[last_particle++] = p;
+    active[last_particle++] = p;
 }
 
 // -------------------------------------------------------------
