@@ -2,6 +2,7 @@
 #define __MODULESCENESPACE_H__
 
 #include "Module.h"
+#include "ModuleAudio.h"
 
 struct SDL_Texture;
 
@@ -19,6 +20,7 @@ public:
 	
 	SDL_Texture* background = nullptr;
 	SDL_Texture* stars = nullptr;
+	Mix_Music* musiquita;
 };
 
 #endif // __MODULESCENESPACE_H__

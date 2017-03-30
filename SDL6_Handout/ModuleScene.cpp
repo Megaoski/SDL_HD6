@@ -24,7 +24,7 @@ bool ModuleScene::Start()
 
 	
 	intro = App->textures->Load("rtype/intro.png");
-	musiquita = App->audio->LoadMusic("rtype/intro.ogg)");
+	musiquita = App->audio->LoadMusic("rtype/intro.ogg");
 
 	App->intro->Enable();
 	App->audio->PlayMusic(musiquita);

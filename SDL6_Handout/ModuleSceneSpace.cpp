@@ -20,9 +20,11 @@ bool ModuleSceneSpace::Start()
 	LOG("Loading space scene");
 	
 	background = App->textures->Load("rtype/background.png");
+	musiquita = App->audio->LoadMusic("rtype/starting.wav");
 
 	App->scene_space->Enable();
 	App->player->Enable();
+	App->audio->PlayMusic(musiquita);
 	
 	
 	return true;
@@ -35,6 +37,7 @@ bool ModuleSceneSpace::CleanUp()
 
 	App->textures->Unload(background);
 	App->player->Disable();
+	App->audio->StopMusic();
 	
 	return true;
 }
