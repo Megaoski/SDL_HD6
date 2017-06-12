@@ -9,6 +9,7 @@
 #include "ModuleParticles.h"
 #include "ModuleScene.h"
 #include "ModuleAudio.h"
+#include "ModuleCollision.h"
 
 Application::Application()
 {
@@ -16,12 +17,13 @@ Application::Application()
 	modules[1] = render = new ModuleRender();
 	modules[2] = input = new ModuleInput();
 	modules[3] = textures = new ModuleTextures();
-	modules[4] = audio = new ModuleAudio();
-	modules[5] = intro = new ModuleScene();
-	modules[6] = scene_space = new ModuleSceneSpace();
-	modules[7] = player = new ModulePlayer();
-	modules[8] = particles = new ModuleParticles();
-	modules[9] = fade = new ModuleFadeToBlack();
+	modules[4] = particles = new ModuleParticles();
+	modules[5] = audio = new ModuleAudio();
+	modules[6] = intro = new ModuleScene();
+	modules[7] = scene_space = new ModuleSceneSpace();
+	modules[8] = player = new ModulePlayer();
+	modules[9] = collision = new ModuleCollision();
+	modules[10] = fade = new ModuleFadeToBlack();
 }	
 
 Application::~Application()

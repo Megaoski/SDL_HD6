@@ -18,7 +18,7 @@ ModulePlayer::ModulePlayer()
 
 	// idle animation (just the ship)
 	idle.SetUp(10, 16, 49, 60, 4, 4,"0,1,2,3");
-	idle.speed = 0.5f;
+	idle.speed = 0.1f;
 	
 
 	// move upwards
