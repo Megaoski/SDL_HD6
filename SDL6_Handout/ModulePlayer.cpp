@@ -102,8 +102,8 @@ update_status ModulePlayer::Update()
 	if (App->input->keyboard[SDL_SCANCODE_SPACE] == KEY_STATE::KEY_DOWN)
 	{
 		App->particles->AddParticle(App->particles->laser, position.x + 40, position.y );
-		App->particles->AddParticle(App->particles->laser, position.x + 120, position.y, 50);
-		App->particles->AddParticle(App->particles->laser, position.x + 200, position.y, 100);
+		//App->particles->AddParticle(App->particles->laser, position.x + 120, position.y, 50);
+		//App->particles->AddParticle(App->particles->laser, position.x + 200, position.y, 100);
 	}
 
 	if(App->input->keyboard[SDL_SCANCODE_S] == KEY_STATE::KEY_IDLE

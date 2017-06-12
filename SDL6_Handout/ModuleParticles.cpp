@@ -35,9 +35,11 @@ bool ModuleParticles::Start()
 	// TODO 2: Create the template for a new particle "laser"
 	
 	laser.anim.PushBack({ 102, 169, 82, 16});
-	laser.anim.PushBack({ 184, 169, 82, 16 });
+	//laser.anim.PushBack({ 184, 169, 82, 16 });
 	laser.anim.loop = false;
 	laser.anim.speed = 0.3f;
+	laser.life = 1000.0f;
+	
 	
 	return true;
 }
