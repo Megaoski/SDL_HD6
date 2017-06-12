@@ -20,7 +20,7 @@ bool ModuleSceneSpace::Start()
 {
 	LOG("Loading space scene");
 	
-	background = App->textures->Load("rtype/background.png");
+	background = App->textures->Load("rtype/flores.png");
 	musiquita = App->audio->LoadMusic("rtype/starting.wav");
 	lasersito = App->audio->LoadSFX("rtype/laser.wav");
 
@@ -28,7 +28,7 @@ bool ModuleSceneSpace::Start()
 	App->player->Enable();
 
 
-	App->audio->PlayMusic(musiquita);
+	/*App->audio->PlayMusic(musiquita);*/
 	
 	
 	return true;
@@ -41,7 +41,8 @@ bool ModuleSceneSpace::CleanUp()
 
 	App->textures->Unload(background);
 	App->player->Disable();
-	App->audio->StopMusic();
+	/*App->audio->StopMusic();*/
+	App->scene_space->Disable();
 	
 	return true;
 }
@@ -50,10 +51,10 @@ bool ModuleSceneSpace::CleanUp()
 update_status ModuleSceneSpace::Update()
 {
 	// Move camera forward -----------------------------
-	int scroll_speed = 1;
+	int scroll_speed = 5;
 
-	App->player->position.x += 1;
-	App->render->camera.x -= 3;
+	/*App->player->position.x += 1;
+	App->render->camera.x -= 3;*/
 	
 
 	// Draw everything --------------------------------------

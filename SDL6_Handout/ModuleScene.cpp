@@ -27,7 +27,7 @@ bool ModuleScene::Start()
 	musiquita = App->audio->LoadMusic("rtype/intro.ogg");
 
 	App->intro->Enable();
-	App->audio->PlayMusic(musiquita);
+	/*App->audio->PlayMusic(musiquita);*/
 	
 
 	return true;
@@ -40,7 +40,8 @@ bool ModuleScene::CleanUp()
 
 	App->textures->Unload(intro);
 	
-	App->audio->StopMusic();
+	/*App->audio->StopMusic();*/
+
 	App->intro->Disable();
 
 	return true;
@@ -56,7 +57,7 @@ update_status ModuleScene::Update()
 
 	if (App->input->keyboard[SDL_SCANCODE_SPACE] == KEY_DOWN)
 	{
-		App->fade->FadeToBlack(App->intro, App->scene_space, 2.0f);
+		App->fade->FadeToBlack(App->intro, App->scene_space, 0.8f);
 	}
 	
 
