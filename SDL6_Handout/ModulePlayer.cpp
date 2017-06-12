@@ -6,7 +6,7 @@
 #include "ModuleRender.h"
 #include "ModulePlayer.h"
 
-// Reference at https://www.youtube.com/watch?v=OEhmUuehGOA
+
 
 ModulePlayer::ModulePlayer()
 {
@@ -17,19 +17,25 @@ ModulePlayer::ModulePlayer()
 	position.y = 120;
 
 	// idle animation (just the ship)
-	idle.PushBack({66, 1, 32, 14});
+	idle.SetUp(10, 16, 49, 60, 4, 4,"0,1,2,3");
+	idle.speed = 0.5f;
+	
 
 	// move upwards
-	up.PushBack({100, 1, 32, 14});
+	up.SetUp(10, 16, 49, 60, 4, 4, "0,1,2,3");
+	up.speed = 0.5f;
+	/*up.PushBack({100, 1, 32, 14});
 	up.PushBack({132, 0, 32, 14});
 	up.loop = false;
-	up.speed = 0.1f;
+	up.speed = 0.1f;*/
 
 	// Move down
-	down.PushBack({33, 1, 32, 14});
+	down.SetUp(10, 16, 49, 60, 4, 4, "0,1,2,3");
+	down.speed = 0.5f;
+	/*down.PushBack({33, 1, 32, 14});
 	down.PushBack({0, 1, 32, 14});
 	down.loop = false;
-	down.speed = 0.1f;
+	down.speed = 0.1f;*/
 }
 
 ModulePlayer::~ModulePlayer()
@@ -40,7 +46,7 @@ bool ModulePlayer::Start()
 {
 	LOG("Loading player");
 
-	graphics = App->textures->Load("rtype/ship.png");
+	graphics = App->textures->Load("rtype/sprites.png");
 
 	return true;
 }

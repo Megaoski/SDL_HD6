@@ -1,3 +1,14 @@
-﻿  ModuleRender.cpp
+﻿  ModulePlayer.cpp
+c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  Application.cpp
+c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  ModuleSceneSpace.cpp
+  ModuleScene.cpp
   SDL Game.vcxproj -> C:\Users\Usuario\Documents\GitHub\SDL_HD6\SDL6_Handout\Debug\SDL6 Handout.exe
   SDL Game.vcxproj -> C:\Users\Usuario\Documents\GitHub\SDL_HD6\SDL6_Handout\Debug\SDL6 Handout.pdb (Full PDB)
