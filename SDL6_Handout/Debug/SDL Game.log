@@ -1,27 +1,5 @@
-﻿  ModuleWindow.cpp
-  ModuleTextures.cpp
-  ModuleSceneSpace.cpp
+﻿  ModulePlayer.cpp
 c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  ModuleScene.cpp
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  ModuleRender.cpp
-  ModulePlayer.cpp
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  ModuleParticles.cpp
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\moduleparticles.cpp(41): warning C4244: '=': conversion from 'float' to 'Uint32', possible loss of data
-  ModuleInput.cpp
-  ModuleFadeToBlack.cpp
-  ModuleCollision.cpp
-  ModuleAudio.cpp
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\moduleaudio.cpp(20): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-  Application.cpp
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(88): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\usuario\documents\github\sdl_hd6\sdl6_handout\animation.h(102): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
   SDL Game.vcxproj -> C:\Users\Usuario\Documents\GitHub\SDL_HD6\SDL6_Handout\Debug\SDL6 Handout.exe
   SDL Game.vcxproj -> C:\Users\Usuario\Documents\GitHub\SDL_HD6\SDL6_Handout\Debug\SDL6 Handout.pdb (Full PDB)

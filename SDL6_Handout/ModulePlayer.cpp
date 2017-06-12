@@ -5,6 +5,7 @@
 #include "ModuleParticles.h"
 #include "ModuleRender.h"
 #include "ModulePlayer.h"
+#include "ModuleCollision.h"
 
 
 
@@ -47,7 +48,8 @@ bool ModulePlayer::Start()
 	LOG("Loading player");
 
 	graphics = App->textures->Load("rtype/sprites.png");
-
+	
+	players.player_collider = App->collision->AddCollider({0, 0, 20, 35}, COLLIDER_PLAYER, this);
 	return true;
 }
 
@@ -119,6 +121,8 @@ update_status ModulePlayer::Update()
 	// Draw everything --------------------------------------
 
 	App->render->Blit(graphics, position.x, position.y, &(current_animation->GetCurrentFrame()));
+
+	App->collision->SetPosition(players.player_collider, players.player_world_x + 18, App->render->camera.y + players.player_y + 10);
 
 	return UPDATE_CONTINUE;
 }
